@@ -9,11 +9,8 @@ public class Main {
 		//Scanner sc=new Scanner(System.in);
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		String name=br.readLine();
-		 int age = Integer.parseInt(br.readLine());
-		    
+		int age = Integer.parseInt(br.readLine()); 
 		String address=br.readLine();
-		
-		
 		Class.forName("com.mysql.jdbc.Driver");//to register driver class
 		Connection con=null;//connection object is initialized as null
 		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/database_jdbc","root","");//to get the connection of database
