@@ -36,7 +36,6 @@ public class CaseStudy_1
 						String ptype=br.readLine();
 						System.out.println("Proof ID: ");
 						String pid=br.readLine();
-						
 						String s = "INSERT INTO Registration VALUES('"+name+"','"+address+"','"+cnum+"','"+email +"','"+ptype +"','"+pid +"')";
 						st.execute(s);
 						break;
